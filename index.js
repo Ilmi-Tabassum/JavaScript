@@ -248,3 +248,40 @@ if(age >= 21){
 
 const canD  = ages.filter(age =>age >=21);
 console.log(canD);
+
+
+// Async Code In javaScript
+
+console.log('start');
+ setTimeout(() =>
+ {
+console.log("we are in the timerout");
+
+ } , 3000);
+
+ console.log ("end");
+
+
+ console.log("Start")
+ const items = [ 1,3,6,8,9,10];
+
+ items.forEach(item =>{
+     console.log(item);
+ });
+ console.log ("end");
+
+
+ console.log('start');
+
+ function loginUser(email, password , callback){
+     setTimeout(() => {
+         console.log("Now we have the data");
+         callback({userEmail: email});
+
+     }, 1500);
+ }
+
+ const user = loginUser('ilmi@gmail.com' , 12345, user =>{
+ console.log(user);
+ });
+ console.log('finish');
